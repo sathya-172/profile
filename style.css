@@ -163,12 +163,21 @@ canvas {
     border-left: none;
 }
 
+#about {
+    padding: 7rem 0 !important;
+
+}
+
+#about .profile-img {
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 3px 0px, rgba(255, 255, 255, 0.20) 0px 0px 0px 1px;
+}
+
 #about img {
     margin: auto;
     display: block;
     height: 500px;
-    border-radius: 10px;
-    box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 3px 0px, rgba(255, 255, 255, 0.20) 0px 0px 0px 1px;
+    padding: 40px;
 
 }
 
@@ -328,11 +337,11 @@ footer ul li a {
 }
 
 .custom-modal-bg {
-    background: rgba(255, 255, 255, 0); 
+    background: rgba(255, 255, 255, 0);
     border-radius: 12px;
     backdrop-filter: blur(12px) saturate(180%);
     -webkit-backdrop-filter: blur(12px) saturate(180%);
-    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 20px rgba(255, 255, 255, 0.25);
 }
 
@@ -349,23 +358,23 @@ footer ul li a {
     filter: invert(1);
 }
 
-.modal-body{
-    padding: 2rem!important;
+.modal-body {
+    padding: 2rem !important;
 }
 
-.modal-body .title{
+.modal-body .title {
     display: flex;
     justify-content: center;
     padding-bottom: 40px;
 }
 
-.modal-body .btn-close{
+.modal-body .btn-close {
     position: absolute;
     top: 25px;
     right: 25px;
 }
 
-.modal-body .calendar-frame{
+.modal-body .calendar-frame {
     border-radius: 12px;
 }
 
@@ -377,6 +386,13 @@ footer ul li a {
     100% {
         transform: rotate(360deg);
     }
+}
+
+@media (max-width:568px) {
+    #about {
+        padding: 1rem !important;
+    }
+    
 }
 
 @media (min-width:990px) and (max-width:1200px) {
