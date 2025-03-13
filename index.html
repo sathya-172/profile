@@ -26,7 +26,6 @@
                     <li class="nav-item"><a class=" hover-underline-animation center" href="#about">About</a></li>
                     <li class="nav-item"><a class=" hover-underline-animation center" href="#career">Career</a></li>
                     <li class="nav-item"><a class=" hover-underline-animation center" href="#contact">Contact</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="#">EN</a></li> -->
                 </ul>
             </div>
         </div>
@@ -130,7 +129,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-5 px-5">
-                    <!-- <img src="profile.jpg" alt="Sathya"> -->
+                    <img src="profile.jpg" alt="Sathya">
                 </div>
                 <div class="col-md-7 px-5">
                     <div class="sj-gradient-container justify-content-start mb-4">
@@ -153,37 +152,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Design Specialties -->
-    <!-- <section class="py-5">
-        <div class="container">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-mobile-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-mobile" type="button" role="tab">Mobile App Design</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-product-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-product" type="button" role="tab">Product Design</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-web-tab" data-bs-toggle="pill" data-bs-target="#pills-web"
-                        type="button" role="tab">Web Design</button>
-                </li>
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-mobile" role="tabpanel">
-                    <p>Specialized in Mobile App Design...</p>
-                </div>
-                <div class="tab-pane fade" id="pills-product" role="tabpanel">
-                    <p>Specialized in Product Design...</p>
-                </div>
-                <div class="tab-pane fade" id="pills-web" role="tabpanel">
-                    <p>Specialized in Web Design...</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <!-- Career Timeline -->
     <section class="py-5 text-light" id="career">
@@ -285,85 +253,54 @@
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <!-- <section class="py-5 text-light">
-        <div class="container text-center">
-            <h2>See What Others Say About Me</h2>
-            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="testimonial-card p-4 rounded bg-secondary">
-                            <p>"Sathiyajothi is a fantastic developer!"</p>
-                            <p class="text-muted">- Client Name</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="testimonial-card p-4 rounded bg-secondary">
-                            <p>"Great work and attention to detail."</p>
-                            <p class="text-muted">- Client Name</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- FAQ Section -->
-    <!-- <section class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Frequently Asked Questions</h2>
-            <div class="accordion" id="faqAccordion">
-                <div class="accordion-item bg-secondary text-light">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne">
-                            What services do you offer?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            I offer a wide range of services including web development, mobile app design, and product
-                            design.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item bg-secondary text-light">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo">
-                            How can I contact you?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            You can contact me via email or book a call using the contact section below.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <!-- Contact Section -->
     <section id="contact">
         <div class="container text-center">
             <h2>Let's Get in Touch</h2>
-            <a class="btn btn-outline-light action-btn mt-4">Book a Call</a>
+            <a class="btn btn-outline-light action-btn mt-4" data-bs-toggle="modal"
+                data-bs-target="#bookMeetingModal">Book a Call</a>
             <p class="mt-3 "><span class="text-muted">or email </span><a
                     class="mailto-link hover-underline-animation center"
                     href="mailto:sathyajothi@104626@gmail.com">sathyajothi104626@gmail.com</a></p>
         </div>
     </section>
+    <!-- Book a Meeting Modal -->
+    <div class="modal fade" id="bookMeetingModal" tabindex="-1" aria-labelledby="bookMeetingModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content custom-modal-bg">
+                <!-- <div class="modal-header">
+                   
+                </div> -->
+                <div class="modal-body d-flex">
+                    <div class="row">
+                        <div class="col-12 title">
+                            <h3 class="modal-title" id="bookMeetingModalLabel">Schedule a Meeting</h3>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                        </div>
+                        <div class="col-md-12 col-lg-6 p-4 d-flex flex-column justify-content-center">
+                            <h3 class="mb-3">Let's Connect and Build Something Amazing!</h3>
+                            <p>Schedule a quick call to discuss your project, ideas, or just to network. I’m here to
+                                help!
+                            </p>
+                            <!-- <ul>
+                                <li>🚀 Free Consultation</li>
+                                <li>💡 Discuss Your Project Ideas</li>
+                                <li>🎯 Get Personalized Solutions</li>
+                            </ul> -->
+                            <p>Pick a time that works best for you!</p>
+                        </div>
+                        <div class="col-md-12 col-lg-6 col-sm-12 ">
+                            <iframe class="calendar-frame"
+                                src='https://outlook.office365.com/owa/calendar/LetsConnect@atomedgesoft.com/bookings/'
+                                width='100%' height='480px' scrolling='yes' style='border:0'></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="py-4 text-light text-center pt-5 mt-5">
@@ -380,7 +317,8 @@
                         class="text-muted">Career</a></li>
                 <li class="d-inline-block me-3 hover-underline-animation center"><a href="#contact"
                         class="text-muted">Contact</a></li>
-                <li class="d-inline-block  hover-underline-animation center"><a href="#portfolio"
+                <li class="d-inline-block  hover-underline-animation center"><a target="_blank"
+                        href="https://www.linkedin.com/in/sathya-s-7757ab169/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                         class="text-muted">LinkedIn</a></li>
             </ul>
         </div>
