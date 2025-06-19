@@ -7,7 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
     { selector: ".timeline-item", x: -50, stagger: 0.3, trigger: ".timeline" },
     { selector: ".dev-card", x: -50, stagger: 0.3 },
     { selector: "#about", y: 50, stagger: 0.3 },
-    { selector: ".quote", y: 50, stagger: 0.3 },
+    { selector: ".quote", y: 50, stagger: 0.3, trigger: "#stack" },
+    { selector: ".marquee", x: 50, stagger: 0.3 },
+
   ];
 
   animateElements.forEach(({ selector, x = 0, y = 0, stagger = 0, trigger }) => {
