@@ -42,6 +42,14 @@ canvas {
     padding: 10px 40px;
 }
 
+.logo{
+    width: 40px;
+    height: auto;
+    filter: grayscale(100%);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 50%;
+}
+
 .hero {
     display: flex;
     justify-content: center;
