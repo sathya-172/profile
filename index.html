@@ -19,14 +19,14 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="marquee.css" />
-    <link rel="icon" href="assets/img/s.webp" type="image/icon" />
+    <link rel="icon" href="assets/img/logo.webp" type="image/icon" />
   </head>
 
   <body class="text-light">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top mt-4">
       <div class="container">
-        <a class="navbar-brand" href="#">Sathiyajothi</a>
+        <a class="navbar-brand" href="#"><img class="logo" src="assets/img/logo.webp" alt="logo"/></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -53,6 +53,11 @@
             <li class="nav-item">
               <a class="hover-underline-animation center" href="#about"
                 >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="hover-underline-animation center" href="#career"
+                >Career</a
               >
             </li>
             <li class="nav-item">
@@ -503,13 +508,13 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-5 mt-5">
-      <div class="container pt-5">
+    <section id="about" class="py-5 mt-2">
+      <div class="container pt-2">
         <div class="row align-items-center">
-          <div class="col-md-5 px-5">
-            <img src="profile.jpg" alt="Sathya" />
+          <div class="col-md-4 profile-img">
+            <img src="assets/img/profile.png" alt="Sathya" />
           </div>
-          <div class="col-md-7 px-5">
+          <div class="col-md-8 px-5 py-5">
             <div class="sj-gradient-container justify-content-start mb-4">
               <div class="sj-background">
                 <div class="sj-gradient">About</div>
@@ -772,7 +777,9 @@
     <!-- Footer -->
     <footer class="py-4 text-light text-center pt-5 mt-5">
       <div class="container d-flex justify-content-between">
-        <ul class="list-unstyled mb-0"></ul>
+        <ul class="list-unstyled mb-0">
+          <img src="assets/img/logo.webp" alt="Logo" class="logo" />
+        </ul>
         <ul class="list-unstyled mb-0">
           <li class="d-inline-block me-3 hover-underline-animation center">
             <a href="#portfolio" class="text-muted">Portfolio</a>
@@ -782,6 +789,9 @@
           </li>
           <li class="d-inline-block me-3 hover-underline-animation center">
             <a href="#about" class="text-muted">About</a>
+          </li>
+          <li class="d-inline-block me-3 hover-underline-animation center">
+            <a href="#career" class="text-muted">Career</a>
           </li>
           <li class="d-inline-block me-3 hover-underline-animation center">
             <a href="#contact" class="text-muted">Contact</a>
