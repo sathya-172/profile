@@ -42,7 +42,7 @@ canvas {
     padding: 10px 40px;
 }
 
-.logo{
+.logo {
     width: 40px;
     height: auto;
     filter: grayscale(100%);
@@ -309,6 +309,34 @@ footer ul li a {
     font-size: 14px;
 }
 
+.logo-hover {
+    transition: background-color 0.3s ease, fill 0.3s ease;
+    border-radius: 50%;
+}
+
+.footer-link-logo {
+    width: 40px;
+    height: 40px;
+    fill: #a3a3a3;
+    transition: background-color 0.3s ease, fill 0.3s ease;
+}
+
+.logo-hover:hover {
+    background-color: #a3a3a3;
+}
+
+.icon-link:hover .footer-link-logo {
+    fill: #1c1c1c;
+}
+
+.pa-8{
+    padding: 8px;
+}
+
+.pa-4{
+    padding: 4px;
+}
+
 .text-fit {
     font-size: clamp(20px, 11.4vw, 500px);
     text-align: center;
@@ -400,7 +428,7 @@ footer ul li a {
     #about {
         padding: 1rem !important;
     }
-    
+
 }
 
 @media (min-width:990px) and (max-width:1200px) {
