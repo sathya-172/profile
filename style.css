@@ -329,11 +329,11 @@ footer ul li a {
     fill: #1c1c1c;
 }
 
-.pa-8{
+.pa-8 {
     padding: 8px;
 }
 
-.pa-4{
+.pa-4 {
     padding: 4px;
 }
 
@@ -342,6 +342,7 @@ footer ul li a {
     text-align: center;
     white-space: nowrap;
     background: linear-gradient(to right, #2c2c2c 0%, #7b7b7b 51%, #8b8b8b 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -364,11 +365,13 @@ footer ul li a {
     transition: transform 0.25s ease-out;
 }
 
-.hover-underline-animation:hover::after {
+.hover-underline-animation:hover::after,
+.hover-underline-animation.active::after {
     transform: scaleX(1);
 }
 
-.hover-underline-animation.center:hover::after {
+.hover-underline-animation.center:hover::after,
+.hover-underline-animation.center.active::after {
     transform-origin: bottom center;
 }
 
